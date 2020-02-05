@@ -11,22 +11,73 @@
       </a>
       <nav>        
         <ul>
-          <li><a href="">Каталог</a>
-            <ul class="visually-hiden">
+          <li ><a href="">Каталог</a>
+            <ul class="visually-hidden">
               <li><a href="">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="">Щербеты</a></li>
               <li><a href="">Фруктовый лед</a></li>
               <li><a href="">Мелорин</a></li>
             </ul>
-          </li>
+          </li >
           <li><a href="">Доставка и оплата</a></li>
           <li><a href="">О Компании</a></li>
         </ul>
       </nav>
-      <a href="">Поиск</a>   
-      <a href="">Вход</a> 
-      <a href="">Пусто</a>
+      <section>
+        <button type="button">
+          <span class="visually-hiden">Поиск по сайту</span>
+          <!--<svg>Здесь будет картинка поиска</svg>-->
+        </button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="search" placeholder="Крем-брюле">
+          <button type="submit">Поиск</button>
+        </form> 
+      </section>   
+      <section>
+        <a href="">Вход</a>
+        <!--<svg>Здесь будет картинка входа</svg>-->  
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="login" class="visually-hiden">Электронная почта</label>
+            <input id="login" type="email" name="login" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="password" class="visually-hiden">Пароль</label>
+            <input id="password" type="email" name="login" placeholder="email@example.com">
+          </p>
+          <button type="submit">Войти</button>
+          <a href="">Забыли пароль?</a>
+          <a href="">Новая регистрация</a>
+        </form>
+        <button type="button">Закрыть</button>
+      </section>    
+      <section>
+        <button type="button">
+          <span class="visually-hiden">Корзина</span>
+          <!--<svg>Здесь будет картинка корзины</svg>--> 
+        </button>  
+        <form action="https://echo.htmlacademy.ru" method="post">            
+          <table>
+            <tr>
+              <td><button type="button">Убрать из корзины</button></td>
+              <td><img src="img/product_mini_1.jpg" alt="Мороженое теплого желтого цвета"></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х <span>200 руб.</span></td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+              <td><button type="button">Убрать из корзины</button></td>
+              <td><img src="img/product_mini_2.jpg" alt="Мороженое розового цвета с посыпкой в виде белых сердечек"></td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг х <span>300 руб.</span></td>
+              <td>450 руб.</td>
+            </tr>
+          </table>
+          <p>Итого: 750 руб.</p>
+          <a href="">Оформить заказ</a>  
+        </form>              
+      </section>      
       <p>С 10 до 20, ежедневно<br>8 812 450-25-25</p>
     </header>
     <main>
@@ -135,15 +186,13 @@
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. 
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hiden">
-            <input type="email" name="user-email" placeholder="email@example.com">
-          Электронная почта
-          </label>        
+          <label for="email" class="visually-hidden">Электронная почта</label> 
+          <input id="email" type="email" name="user-email" placeholder="email@example.com">       
         <button type="submit">Отправить</button>
       </form>
       </section>
       <section>
-        <h2 class="visually-hiden">Карта</h2>
+        <h2 class="visually-hidden">Карта</h2>
         <div>
           <p>Адрес главного офиса и офлайн-магазина:<br>
             ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -153,49 +202,17 @@
           <a href="">Форма обратной связи</a>          
         </div>
         <img src="img/Map.png" width="1302" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </section>
-      <section>
-        <h2 class="visually-hiden">Поиск</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="search" placeholder="Крем-брюле">
-          <button type="submit">Поиск</button>
-        </form> 
-      </section>  
-      <section>
-        <h2 class="visually-hiden">Личный кабинет</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="visually-hiden">
-              <input type="email" name="login" placeholder="email@example.com">
-              Электронная почта
-            </label>
-          </p>
-          <p>
-            <label class="visually-hiden">
-              <input type="password" name="password" placeholder="••••••••">
-              Пароль
-            </label>
-          </p>
-          <button type="submit">Войти</button>
-          <a href="">Забыли пароль?</a>
-          <a href="">Новая регистрация</a>
-        </form>
-        <button type="button">Закрыть</button>
-      </section>
+      </section>      
       <section>
         <h2>Мы обязательно вам ответим!</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
-            <label class="visually-hiden">
-            <input type="text" name="user-name" placeholder="Имя Фамилия">
-            Имя Фамилия
-            </label>
+            <label for="nameLastname" class="visually-hidden"> Имя Фамилия</label>
+            <input id="nameLastname" type="text" name="user-name" placeholder="Имя Фамилия">           
           </p>
           <p>
-            <label class="visually-hiden">
-            <input type="email" name="user-email" placeholder="email@example.com">
-            Электронная почта
-            </label>
+            <label for="user-email" class="visually-hidden">Электронная почта</label>
+            <input id="user-email" type="email" name="user-email" placeholder="email@example.com">                      
           </p>
           <p>
             <textarea name="comment" rows="9">
