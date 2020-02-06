@@ -81,7 +81,67 @@
       </ul>
       <section>
         <h2 class="visually-hidden">Фильтры</h2>
-        <!--Здесь будут фильтры-->
+        <form action="https://echo.htmlacademy.ru" method="post"> 
+          <fieldset>
+            <legend>Сортировка</legend>
+            <ul class="visually-hidden">
+              <li>по популярности</li>
+              <li>сначала недорогие</li>
+              <li>сначала дорогие</li>
+              <li>по жирности</li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Цена:</legend>
+            <input type="number" name="min" value="100">
+            <input type="number" name="max" value="500">
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <label>
+              <input type="radio" name="creaminess" value="0%">
+              0%
+            </label>
+            <label>
+              <input type="radio" name="creaminess" value="до 10%" checked>
+              до 10%
+            </label>
+            <label>
+              <input type="radio" name="creaminess" value="до 30%">
+              до 30%
+            </label>
+            <label>
+              <input type="radio" name="creaminess" value="до 30%">
+              выше 30%
+            </label>  
+          </fieldset>           
+          <fieldset>
+            <legend>Наполнители:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                  <label for="filter-chocolate">шоколадные</label>
+                </li>
+                <li>
+                 <input type="checkbox" name="sugar-powders" id="filter-sugar-powders" checked>
+                  <label for="filter-sugar-powders">сахарные присыпки</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="fruits" id="filter-fruits">
+                  <label for="filter-fruits">фрукты</label>
+                </li>
+               <li>
+                 <input type="checkbox" name="syrups" id="filter-syrups">
+                 <label for="filter-syrups">сиропы</label>
+                </li>
+               <li>
+                 <input type="checkbox" name="jams" id="filter-jams">
+                 <label for="filter-jams">джемы</label>
+               </li>
+             </ul>
+           </fieldset>
+        <button type="submit">Применить</button>
+      </form>
       </section>
       <section>
         <h2 class="visually-hidden">Список сливочного мороженого</h2>
