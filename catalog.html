@@ -22,8 +22,8 @@
           <!--<svg>Здесь будет картинка поиска</svg>-->
         </button>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="search" name="search" placeholder="Крем-брюле">
-          <button type="submit">Поиск</button>
+          <label for="search" class="visually-hidden">Введите, что вы ищете?</label>
+          <input id="search" type="search" name="search" placeholder="Например: Крем-брюле">          
         </form> 
       </section> 
       <section>
@@ -84,17 +84,42 @@
         <form action="https://echo.htmlacademy.ru" method="post"> 
           <fieldset>
             <legend>Сортировка</legend>
+            <button>По популярности</button>
             <ul class="visually-hidden">
-              <li>по популярности</li>
-              <li>сначала недорогие</li>
-              <li>сначала дорогие</li>
-              <li>по жирности</li>
+              <li>
+                <label>
+                  <input type="radio" name="sorting" value="по популярности" checked>
+                по популярности
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="sorting" value="сначала недорогие">
+                сначала недорогие
+              </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="sorting" value="сначала дорогие">
+                сначала дорогие
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="sorting" value="по жирности">
+                по жирности 
+                </label>
+               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Цена:</legend>
             <input type="number" name="min" value="100">
             <input type="number" name="max" value="500">
+            <div class="range-slider-track">
+              <div class="range-slider-pin range-slider-pin-min"></div>
+              <div class="range-slider-pin range-slider-pin-max"></div>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>

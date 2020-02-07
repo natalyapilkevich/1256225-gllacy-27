@@ -30,8 +30,8 @@
           <!--<svg>Здесь будет картинка поиска</svg>-->
         </button>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="search" name="search" placeholder="Крем-брюле">
-          <button type="submit">Поиск</button>
+          <label for="search" class="visually-hidden">Введите, что вы ищете?</label>
+          <input id="search" type="search" name="search" placeholder="Например: Крем-брюле">          
         </form> 
       </section>   
       <section>
@@ -188,8 +188,8 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <label for="email" class="visually-hidden">Электронная почта</label> 
           <input id="email" type="email" name="user-email" placeholder="email@example.com">       
-        <button type="submit">Отправить</button>
-      </form>
+          <button type="submit">Отправить</button>
+        </form>
       </section>
       <section>
         <h2 class="visually-hidden">Карта</h2>
