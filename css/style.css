@@ -58,9 +58,13 @@ a {
 }
 .main-navigation-list,
 .slider-list,
+.offer-list,
 .features-list,
 .breadcrumbs,
-.catalog-list {
+.fillers-list,
+.catalog-list,
+.top-product ul,
+.pagination-list {
     list-style: none;
 }
 .main-navigation a {
@@ -76,6 +80,36 @@ a {
     line-height: 24px; 
     font-weight: 700; 
 }
+.slider-item {
+    font-size: 60px;
+    line-height: 60.5px; 
+    font-weight: 700; 
+}
+.offer-item:first-child {
+    background: url("../img/raspberries.png") no-repeat;    
+    background-color: #9c1e25;
+    width: 560px;
+    height: 229px;
+    border-radius: 15px;
+}
+.offer-item:nth-child(2) {
+    background: url("../img/chocolate.png") no-repeat;    
+    background-color: #60442f;
+    width: 560px;
+    height: 229px;
+    border-radius: 15px;
+}
+.offer-item h3{
+    font-size: 35px;
+    line-height: 41px; 
+    font-weight: 700;  
+}
+.offer-item p{
+    font-size: 18px;
+    line-height: 22px; 
+    font-weight: 700;  
+}
+
 .footer-links a:hover,
 .footer-copyright a:hover,
 .footer-links a:focus,
@@ -90,7 +124,10 @@ a {
     background-color: #EEE2C9;
     background-image: url("../img/background-waffle.jpg");
     background-repeat: no-repeat;
-    color: #000000;    
+    color: #000000;   
+    width: 1146px;
+    height: 306px;
+    border-radius: 15px; 
 }
 .features-subtitle {
     font-size: 24px;
@@ -103,6 +140,9 @@ a {
     background-repeat: no-repeat;
     background-position: 0 0;
     color: #000000;
+    width: 560px;
+    height: 220px;
+    border-radius: 15px;
 }
 .news h2 {
     font-weight: 500; 
@@ -117,10 +157,10 @@ a {
 .main-footer ul {
     list-style:none;
 }
-.social-button {
+.social-button a{
     color: #ffffff;
 }
-.footer-link {
+.footer-link a{
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;   
@@ -148,33 +188,49 @@ li:first-child.footer-link{
     color: #ffffff;
     text-decoration: underline;
 }
+.top-product-item,
 .catalog-item {
-    font-weight: 500;  
+    font-weight: 500;     
 }
+.top-product-item img,
+.catalog-item img{    
+    border-radius: 50%; 
+}
+.top-product-item a,
 .catalog-item a {
     color: #ffffff;
     text-decoration: underline;
 }
+.top-product-item a:focus,
+.top-product-item a:hover,
 .catalog-item a:focus,
 .catalog-item a:hover {
     color:#ffbc9e;
 }
+.top-product-item-price,
 .catalog-item-price {
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
 }
+.top-product-item-unit,
 .catalog-item-unit {
     font-size: 30px;
     line-height: 45px;
     font-weight: 700; 
 }
+.main-navigation-list,
+.breadcrumbs {
+    display: flex;    
+}
+.main-navigation-list li,
+.breadcrumbs li {
+    margin: 10px;
+    }
 .site-navigation-current a{   
-    display: flex;
-    align-items: center; 
-    justify-content: center;
     width: 100%;
     height: 100%;
+    padding: 8px;
 
     text-decoration: none; 
      
@@ -182,6 +238,71 @@ li:first-child.footer-link{
     border-radius: 15px;    
     box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64); 
 }
+.contacts-base {
+    font-size: 14px;
+    line-height: 20px;     
+}
+.contacts-info {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700; 
+}
+.filter-button-sorting {
+    line-height: 18px; 
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;    
+  
+    background-color: #9db1a5;
+    border: none;
+    border-radius: 20px;
+    width: 194px;
+    height: 37px;    
+}
+.filter-button-sorting:focus,
+.filter-button-sorting:hover {
+    color: #323232;
+}
+.filter-button {
+    line-height: 18px; 
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;    
+  
+    background-color: #9db1a5;
+    border: solid 2px #ffffff;
+    border-radius: 20px;
+    width: 144px;
+    height: 37px;      
+}
+.filter-button:focus,
+.filter-button:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+.filter-button:active {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 1px 0 #696969;
+}
+.filters legend {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;  
+}
+.filter-button-sorting,
+.fillers-list {    
+    line-height: 18px;
+    font-weight: 500;  
+}
+.pagination-item a{
+    line-height: 18px;
+    font-weight: 500;  
+    color: #ffffff;
+}
+
 
 
 
