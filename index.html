@@ -14,14 +14,14 @@
       </a>
       <nav class="main-navigation">        
         <ul class="main-navigation-list">
-          <li ><a href="">Каталог</a>
-            <ul class="visually-hidden">
+          <li><a href="">Каталог</a>            
+            <ul class="main-navigation-dropdown-list">
               <li><a href="">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="">Щербеты</a></li>
               <li><a href="">Фруктовый лед</a></li>
               <li><a href="">Мелорин</a></li>
-            </ul>
+             </ul>
           </li >
           <li><a href="">Доставка и оплата</a></li>
           <li><a href="">О Компании</a></li>
@@ -102,11 +102,11 @@
           </li>
         </ul>
         <div class="slider-control">
-          <button class="slider-button" type="button">dot1</button>
-          <button class="slider-button" type="button">dot2</button>        
-          <button class="slider-button" type="button">dot3</button>
+          <button class="slider-control-button" type="button">dot1</button>
+          <button class="slider-control-button" type="button">dot2</button>        
+          <button class="slider-control-button" type="button">dot3</button>
         </div>
-        <button class="button" type="button">Давайте оба!</button>
+        <button class="button slider-button" type="button">Давайте оба!</button>
       </section>
       <section class="offer">
         <h2 class="visually-hidden">Акции и спецпредложения</h2>
@@ -114,45 +114,49 @@
           <li class="offer-item">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <button class="button" type="button">Хочу варенье!</button>
+            <button class="button offer-button" type="button">Хочу варенье!</button>
           </li>
           <li class="offer-item">
             <h3>Шоколадки даром!</h3>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <button class="button" type="button">Хочу шоколадки!</button>
+            <button class="button offer-button" type="button">Хочу шоколадки!</button>
           </li>
         </ul>        
       </section>
       <section class="top-product">
         <h2 class="visually-hidden">Лучшие товары</h2>
-        <ul>
+        <ul class="top-product-list">
           <li class="top-product-item">
             <a href="">
-            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>            
               <img src="img/hit_product_1.jpg" width="267" height="267" alt="Мороженое теплого желтого цвета">
+              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>            
             </a>
             <p class="top-product-item-price">310&#8381;<span class="top-product-item-unit">/кг</span></p>
+            <button class="button item-button" type="button">Быстрый просмотр</button>
           </li>
           <li class="top-product-item">
-            <a href="">
-              <h3>Сливочно-кофейное с кусочками шоколада</h3>
+            <a href="">              
               <img src="img/hit_product_2.jpg" width="267" height="267" alt="Мороженое светло-коричневого цвета">
+              <h3>Сливочно-кофейное с кусочками шоколада</h3>
             </a>
             <p class="top-product-item-price">380&#8381;<span class="top-product-item-unit">/кг</span></p>
+            <button class="button item-button" type="button">Быстрый просмотр</button>
           </li>
           <li class="top-product-item">
-            <a href="">
-              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <a href="">              
               <img src="img/hit_product_3.jpg" width="267" height="267" alt="Мороженое розового цвета с посыпкой в виде белых сердечек">
+              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </a>
             <p class="top-product-item-price">355&#8381;<span class="top-product-item-unit">/кг</span></p>
+            <button class="button item-button" type="button">Быстрый просмотр</button>
           </li> 
           <li class="top-product-item">
-            <a href="">
-              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+            <a href="">              
               <img src="img/hit_product_4.jpg" width="267" height="267" alt="Мороженое бело-коричневого цвета">
+              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             </a>
             <p class="top-product-item-price">415&#8381;<span class="top-product-item-unit">/кг</span></p>
+            <button class="button item-button" type="button">Быстрый просмотр</button>
           </li>                 
         </ul>
       </section>
@@ -191,7 +195,7 @@
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="email" class="visually-hidden">Электронная почта</label> 
           <input id="email" type="email" name="user-email" placeholder="email@example.com">       
-          <button class="button" type="submit">Отправить</button>
+          <button class="button subscription-button" type="submit">Отправить</button>
         </form>
       </section>
       <section class="contacts">
@@ -206,7 +210,7 @@
             <span class="contacts-info">8 812 450-25-25</span><br>
             (с 10 до 20 ежедневно)
           </p>          
-          <a class="button" href="">Форма обратной связи</a>          
+          <a class="button contacts-button" href="">Форма обратной связи</a>          
         </div>
         <img src="img/Map.png" width="1302" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </section>      
