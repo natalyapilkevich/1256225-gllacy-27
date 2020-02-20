@@ -206,6 +206,16 @@ a {
     color: #000000;
     text-decoration: underline;
 }
+.subscription {
+    background-color: #ffffff;
+    background-image: url("../img/background-mail.jpg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000000;
+    width: 560px;
+    height: 220px;
+    border-radius: 15px;
+}
 .main-footer ul {
     list-style:none;
 }
@@ -240,8 +250,10 @@ a {
     color: #ffffff;
     text-decoration: underline;
 }
-.top-product-item,
-.catalog-item {
+.top-product-item h3,
+.catalog-item h3{
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 500;     
 }
 .top-product-item img,
@@ -366,6 +378,179 @@ a {
     line-height: 18px;
     font-weight: 500;  
     color: #ffffff;
+}
+.container {
+    max-width: 1200px;
+    min-width: 320px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+.header-wrap {
+    display: flex;
+    max-width: 1200px;
+    min-width: 320px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+.header-logo {
+    margin-left: 27px;
+}
+.main-navigation-list {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    align-items: center;
+}
+.main-navigation-list > li {
+    margin: 0px;
+    margin-left: 26px;    
+}
+.user-navigation {
+    display: flex;
+    margin-left: auto;
+    width: 250px;
+    align-items: center;
+}
+.header-contacts {
+    text-align: right;
+    margin: 0;
+    margin-right: 27px;
+}
+.slider {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.slider-wrap-button {
+    display: flex; 
+    margin-left: 27px;   
+}
+.slider-control {
+   margin-right: 355px; 
+   max-width: 85px;
+}
+.offer-list {
+    display: flex; 
+    margin: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0px;
+}
+.offer-item {
+    margin-left: 27px;
+}
+.top-product-list,
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+.top-product-item,
+.catalog-item {
+    max-width: 267px;
+    margin-left: 26px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.features {  
+    margin: 0px;
+    margin-bottom: 40px;
+    margin-left: 27px;
+    padding: 0px;
+}
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;    
+    padding: 0px;
+}
+.feature-item {
+    width: 550px;
+    margin-left: 20px;
+}
+.index-columns {
+    display: flex;
+    margin-bottom: 20px;
+}
+.news,
+.subscription {
+    margin-left: 27px;
+}
+.main-footer {
+    display: flex;
+    align-items: center;
+}
+.footer-social {
+    display: flex;
+    margin: 0px;
+    margin-left: 27px;
+    margin-right: auto;
+    padding: 0px;
+    max-width: 190px;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;  
+    margin-left: 210px;  
+    padding: 0px;
+    max-width: 340px; 
+    text-align: left;
+}
+.footer-link {
+    margin-left: 25px;
+    text-align: left;
+}
+.footer-copyright { 
+    max-width: 190px;
+    margin-right: 27px;
+    margin-left: auto;
+}
+.footer-copyright p {
+    margin: 0px;
+    padding: 0px;
+}
+.breadcrumbs {
+    margin: 0px;
+    padding: 0px;   
+    margin-left: 7px; 
+    margin-bottom: 5px;
+}
+.breadcrumbs li {
+    margin-left: 20px;
+}
+.page-title {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 27px;
+    margin-bottom: 32px;
+}
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 27px;
+    margin-bottom: 36px;
+    align-items: center;
+}
+.fillers-list {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.pagination-list {
+    display: flex;
+    margin: 0px;
+    margin-right: 27px;
+    margin-bottom: 28px;
+    justify-content: flex-end; 
+}
+.pagination-item {
+    margin-right: 20px;
+
 }
 
 

@@ -8,7 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
+      <div class="header-wrap">
       <a class="header-logo">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
       </a>
@@ -27,6 +28,7 @@
           <li><a href="">О Компании</a></li>
         </ul>
       </nav>
+      <div class="user-navigation">        
       <section class="modal search">
         <button class="header-button" type="button">
           <span class="visually-hiden">Поиск по сайту</span>
@@ -80,7 +82,9 @@
           <p class="basket-total">Итого: 750 руб.</p>
           <a class="button" href="">Оформить заказ</a>  
         </form>              
-      </section>      
+      </section>  
+      </div> 
+      </div>   
       <p class="header-contacts">С 10 до 20, ежедневно<br><span class="header-tel">8 812 450-25-25</span></p>
     </header>
     <main class="container">
@@ -101,12 +105,14 @@
             <img src="img/slider_3.png" width="647" height="584" alt="Два рожка мороженого: белый с шоколадной глазурью и ярко-розовый">
           </li>
         </ul>
+        <div class="slider-wrap-button">
         <div class="slider-control">
-          <button class="slider-control-button" type="button">dot1</button>
-          <button class="slider-control-button" type="button">dot2</button>        
-          <button class="slider-control-button" type="button">dot3</button>
+          <button class="slider-control-button" type="button">d1</button>
+          <button class="slider-control-button" type="button">d2</button>        
+          <button class="slider-control-button" type="button">d3</button>
         </div>
         <button class="button slider-button" type="button">Давайте оба!</button>
+        </div>
       </section>
       <section class="offer">
         <h2 class="visually-hidden">Акции и спецпредложения</h2>
@@ -180,6 +186,7 @@
           </li>
         </ul>
       </section>
+      <div class="index-columns">
       <article class="news">
         <h2>Новое в нашем блоге</h2>      
         <h3>
@@ -198,6 +205,7 @@
           <button class="button subscription-button" type="submit">Отправить</button>
         </form>
       </section>
+      </div>
       <section class="contacts">
         <h2 class="visually-hidden">Карта</h2>
         <div>
@@ -234,32 +242,35 @@
         </form>
       </section>      
     </main>
-    <footer class="main-footer">
-      <div class="footer-social">
-        <ul>
+    <footer class="main-footer container">
+      <div>
+        <ul class="footer-social">
           <li class="social-button" ><a href="">Твитер</a></li>
           <li class="social-button" ><a href="">Инстаграмм</a></li>
           <li class="social-button" ><a href="">Фейсбук</a></li>
           <li class="social-button" ><a href="">Вконтакте</a></li>
         </ul>
       </div>
-      <div class="footer-links">
-        <ul>
+      <div>
+        <ul class="footer-links">
           <li class="footer-link"><a href="">Для поставщиков</a></li>
-          <li class="footer-link"><a href="">О производстве</a></li>
           <li class="footer-link"><a href="">Наши документы</a></li>
+          <li class="footer-link"><a href="">О производстве</a></li>
           <li class="footer-link"><a href="">Экологические стандарты</a></li>
         </ul>
       </div>
-     <p class="footer-copyright">Сделано в  
+    <div class="footer-copyright">
+     <a class="html-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="39">
+      </a>   
+     <p>      
+      Сделано в  
        <a href="https://htmlacademy.ru/intensive/htmlcss">
         HTML Academy
-      </a>
-       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="39">
-      </a>
-       © 2019
+      </a>      
+       © 2019       
      </p>
+    </div>
     </footer> 
   </body>
 </html>
