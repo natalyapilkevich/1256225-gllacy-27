@@ -7,7 +7,31 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>    
+  <body>  
+    <section class="feedback">
+      <h2>Мы обязательно вам ответим!</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p>
+          <label for="nameLastname" class="visually-hidden"> Имя Фамилия</label>
+          <input id="nameLastname" type="text" name="user-name" placeholder="Имя Фамилия">           
+        </p>
+        <p>
+          <label for="user-email" class="visually-hidden">Электронная почта</label>
+          <input id="user-email" type="email" name="user-email" placeholder="email@example.com">                      
+        </p>
+        <p>
+          <textarea name="comment" rows="5">В свободной форме
+          </textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+            <path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </form>
+    </section>        
       <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
       <input class="visually-hidden" type="radio" id="product-2" name="toggle">
       <input class="visually-hidden" type="radio" id="product-3" name="toggle">
@@ -19,7 +43,7 @@
       </a>
       <nav class="main-navigation">        
         <ul class="main-navigation-list">
-          <li><a href="l">Каталог</a>            
+          <li class="main-navigation-item submenu"><a href="">Каталог</a>            
             <ul class="main-navigation-dropdown-list">
               <li><a href="">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
@@ -28,8 +52,8 @@
               <li><a href="">Мелорин</a></li>
              </ul>
           </li>
-          <li><a href="">Доставка и оплата</a></li>
-          <li><a href="">О Компании</a></li>
+          <li class="main-navigation-item"><a href="">Доставка и оплата</a></li>
+          <li class="main-navigation-item"><a href="">О Компании</a></li>
         </ul>
       </nav>
       <div class="user-navigation">                
@@ -234,31 +258,7 @@
           <a class="button contacts-button" href="">Форма обратной связи</a>          
         </div>
         <img src="img/Map.png" width="1200" height="429" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </section>      
-      <section class="feedback">
-        <h2>Мы обязательно вам ответим!</h2>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p>
-            <label for="nameLastname" class="visually-hidden"> Имя Фамилия</label>
-            <input id="nameLastname" type="text" name="user-name" placeholder="Имя Фамилия">           
-          </p>
-          <p>
-            <label for="user-email" class="visually-hidden">Электронная почта</label>
-            <input id="user-email" type="email" name="user-email" placeholder="email@example.com">                      
-          </p>
-          <p>
-            <textarea name="comment" rows="9">            В свободной форме
-            </textarea>
-          </p>
-          <button class="button" type="submit">Отправить</button>
-          <button class="modal-close" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
-              <path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/>
-            </svg>
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-        </form>
-      </section>      
+      </section>         
     </main>
     <footer class="main-footer container">    
         <ul class="footer-social">
