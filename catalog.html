@@ -134,13 +134,16 @@
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="post"> 
           <fieldset>
-            <legend>Сортировка</legend>
-            <button class="filter-button-sorting">По популярности</button>
+            <legend>Сортировка:</legend>
+            <div class="filter-background">
+            <button class="filter-button-sorting">По популярности
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+            </button>            
             <ul class="visually-hidden">
               <li>
                 <label>
-                  <input class="filter-option-sorting" type="radio" name="sorting" value="по популярности" checked>
-                по популярности
+                  <input class="filter-option-sorting" type="radio" name="sorting" value="по популярности" checked>                  
+                по популярности                
                 </label>
               </li>
               <li>
@@ -162,37 +165,39 @@
                 </label>
                </li>
             </ul>
+          </div>
           </fieldset>
           <fieldset>
             <legend>Цена:</legend>
+            <div class="filter-background">
             <input type="number" name="min" value="100">
             <input type="number" name="max" value="500">
             <div class="range-slider-track">
               <div class="range-slider-pin range-slider-pin-min"></div>
               <div class="range-slider-pin range-slider-pin-max"></div>
             </div>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>
+            <div class="filter-background">
             <label>
-              <input class="filter-option-creaminess" type="radio" name="creaminess" value="0%">
-              0%
+              <input class="filter-option-creaminess" type="radio" name="creaminess" value="0%">0%
             </label>
             <label>
-              <input class="filter-option-creaminess" type="radio" name="creaminess" value="до 10%" checked>
-              до 10%
+              <input class="filter-option-creaminess" type="radio" name="creaminess" value="до 10%" checked>до 10%
             </label>
             <label>
-              <input class="filter-option-creaminess" type="radio" name="creaminess" value="до 30%">
-              до 30%
+              <input class="filter-option-creaminess" type="radio" name="creaminess" value="до 30%">до 30%
             </label>
             <label>
-              <input class="filter-option-creaminess" type="radio" name="creaminess" value="до 30%">
-              выше 30%
+              <input class="filter-option-creaminess" type="radio" name="creaminess" value="до 30%">выше 30%
             </label>  
+          </div>
           </fieldset>           
           <fieldset>
             <legend>Наполнители:</legend>
+            <div class="filter-background">
               <ul class="fillers-list">
                 <li>
                   <input class="filter-option-filler" type="checkbox" name="chocolate" id="filter-chocolate" checked>
@@ -215,6 +220,7 @@
                  <label for="filter-jams">джемы</label>
                </li>
              </ul>
+            </div>
            </fieldset>
         <button class="filter-button" type="submit">Применить</button>
       </form>
@@ -345,7 +351,7 @@
         </ul>
       </section>
       <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li class="pagination-item"><a>1</a></li>
         <li class="pagination-item"><a href="">2</a></li>
         <li class="pagination-item"><a href="">3</a></li>
         <li class="pagination-item"><a href="">4</a></li>
