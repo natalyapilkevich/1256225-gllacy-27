@@ -15,7 +15,7 @@
       </a>
       <nav class="main-navigation">        
         <ul class="main-navigation-list">
-          <li class="main-navigation-item submenu site-navigation-current"><a href="">Каталог</a>            
+          <li class="site-navigation-current"><a href="">Каталог</a>            
             <ul class="main-navigation-dropdown-list">
               <li><a href="">Новинки</a></li>
               <li class="current-page"><a>Сливочное</a></li>
@@ -133,10 +133,10 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="post"> 
-          <fieldset>
+          <fieldset class="filter-item">
             <legend>Сортировка:</legend>
             <div class="filter-background">
-            <button class="filter-button-sorting">По популярности
+            <button class="filter-button-sorting">по популярности
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
             </button>            
             <ul class="visually-hidden">
@@ -167,35 +167,43 @@
             </ul>
           </div>
           </fieldset>
-          <fieldset>
-            <legend>Цена:</legend>
-            <div class="filter-background">
-            <input type="number" name="min" value="100">
-            <input type="number" name="max" value="500">
-            <div class="range-slider-track">
-              <div class="range-slider-pin range-slider-pin-min"></div>
-              <div class="range-slider-pin range-slider-pin-max"></div>
-            </div>
+          <fieldset class="filter-item filter-price">
+            <legend class="visually-hidden">Цена:</legend>
+            <div class="range-slider">
+              <div class="price-controls">
+                <span class="price-title">Цена:</span>
+                <input type="number" name="min" value="100">
+                <span class="price-ruble"> руб. – </span>
+                <input type="number" name="max" value="500">
+                <span class="price-ruble"> руб.</span>
+              </div>
+              <div class="range-slider-track">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-slider-pin range-slider-pin-min"></div>
+                <div class="range-slider-pin range-slider-pin-max"></div>
+              </div>
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-item">
             <legend>Жирность:</legend>
             <div class="filter-background">
-            <label>
-              <input class="filter-option-creaminess" type="radio" name="creaminess" value="0%">0%
+            <label class="filter-option-creaminess">
+              <input type="radio" name="creaminess" value="0%">0%
             </label>
-            <label>
-              <input class="filter-option-creaminess" type="radio" name="creaminess" value="до 10%" checked>до 10%
+            <label class="filter-option-creaminess">
+              <input type="radio" name="creaminess" value="до 10%" checked>до 10%
             </label>
-            <label>
-              <input class="filter-option-creaminess" type="radio" name="creaminess" value="до 30%">до 30%
+            <label class="filter-option-creaminess">
+              <input type="radio" name="creaminess" value="до 30%">до 30%
             </label>
-            <label>
-              <input class="filter-option-creaminess" type="radio" name="creaminess" value="до 30%">выше 30%
+            <label class="filter-option-creaminess">
+              <input type="radio" name="creaminess" value="до 30%">выше 30%
             </label>  
           </div>
           </fieldset>           
-          <fieldset>
+          <fieldset class="filter-item">
             <legend>Наполнители:</legend>
             <div class="filter-background">
               <ul class="fillers-list">
@@ -350,12 +358,22 @@
           </li>        
         </ul>
       </section>
-      <ul class="pagination-list">
-        <li class="pagination-item"><a>1</a></li>
+      <ul class="pagination-list">   
+        <li class="pagination-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+            <path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 
+            .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+        </li>     
+        <li class="pagination-item paginator-item-current"><a>1</a></li>
         <li class="pagination-item"><a href="">2</a></li>
         <li class="pagination-item"><a href="">3</a></li>
         <li class="pagination-item"><a href="">4</a></li>
         <li class="pagination-item"><a href="">5</a></li>
+        <li class="pagination-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+            <path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 
+            .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+        </li>
       </ul>   
     </main>
     <footer class="main-footer container">    

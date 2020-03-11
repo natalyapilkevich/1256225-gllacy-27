@@ -7,7 +7,7 @@ body {
     font-weight: 400;
     color: #ffffff;  
     min-width: 940px;
-    background-color: #849d8f;  
+    background-color: #849d8f;
   }
 a {
     text-decoration: none; 
@@ -49,8 +49,8 @@ a {
 .slider-button {
     font-size: 32px;
     line-height: 44px; 
-    padding: 10px 36px; 
-    margin-top: 30px;
+    padding: 10px 35px; 
+    margin-top: 34px;
 }
 .offer-button {
     padding: 10px 18px;
@@ -87,14 +87,13 @@ a {
     position: relative;
 }
 .header-logo {
-    margin-top: 5px;
+    margin-top: 6px;
 }
 .main-navigation-list {
     display: flex;
     margin: 0px;
     padding: 0px;
-    margin-left: 10px;
-    margin-top: -5px;
+    margin-left: 10px;    
 }
 .main-navigation-list > li {
     margin: 0px; 
@@ -104,7 +103,7 @@ a {
     line-height: 18px; 
     font-weight: 700;
     color: #ffffff;
-    padding: 10px 14px;
+    padding: 6px 14px;
     display: block;
     text-decoration: none;
     position: relative;
@@ -176,7 +175,7 @@ a {
 }
 .search-button {
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 7px;
+    padding: 7px 9px;
     border-radius: 50%;
     margin-left: 10px;
     border: none; 
@@ -377,7 +376,7 @@ a {
 .header-contacts {
     position: absolute;
     right: 27px;
-    top: 68px;
+    top: 73px;
     font-size: 14px;
     line-height: 16px; 
     font-weight: bold;
@@ -390,6 +389,7 @@ a {
     font-weight: bold; 
 }
 .site-wrapper {
+    margin: 0px;
     min-width: 940px;
     background-color: #849d8f;
     background-image: url("../img/slider_1.jpg");
@@ -438,6 +438,21 @@ a {
     border: 2px solid #ffffff;
     border-radius: 50%;
     cursor: pointer;
+  }
+.slider-controls label:hover,
+.slider-controls label:focus {
+    width: 17px;
+    height: 17px;
+    background-color: rgba(248, 247, 244, 0.4);
+    border: 2px solid #ffffff;
+    border-radius: 50%;    
+  }
+.slider-controls label:active {
+    width: 17px;
+    height: 17px;
+    background-color:white;
+    border: 2px solid #ffffff;
+    border-radius: 50%;    
   }
   #product-1:checked ~ .site-wrapper {
     background-color: #849d8f;
@@ -804,7 +819,7 @@ a {
     font-weight: 700;  
     margin: 0px;
     padding: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 .breadcrumbs a {
     font-size: 14px;
@@ -902,8 +917,7 @@ a {
      
     background-color: #d07058;   
     border-radius: 18px;    
-    box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64); 
-    padding: 6px 14px;
+    box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);     
 }
 .site-navigation-current > a:hover {
     color: white;
@@ -942,22 +956,17 @@ a {
     border-radius: 20px;
     width: 144px;
     height: 37px; 
-    margin-top: 20px;     
+    margin-top: 5px;     
 }
 .filter-button:focus,
 .filter-button:hover {
-    color: #000000;
+    color: #323232;
     background-color: #ffffff;
 }
 .filter-button:active {
-    color: #000000;
+    color: #323232;
     background-color: #ffffff;
     box-shadow: 0 2px 1px 0 #696969;
-}
-.filters legend {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 500;  
 }
 .filter-button-sorting,
 .fillers-list { 
@@ -970,26 +979,40 @@ a {
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;    
-    margin-bottom: 36px;
+    margin-bottom: 24px;
     align-items: center;
 }
 .filter-background {
-    padding: 7px 17px;
+    padding: 7px 11px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
 }
-.filter fieldset {
+.filter-item {
     border: none;  
     margin: 0px;
-    padding: 0px;  
+    padding: 0px; 
+    margin-right: 14px; 
+    margin-bottom: 15px;
 }
-.filter legend {
-    margin-bottom: 6px;
+.filter-item legend {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;  
+    padding-left: 16px;
+    margin-bottom: 5px;
+}
+.filter-price legend{
+    margin: 0px;
 }
 .fillers-list {
     display: flex;
     margin: 0px;
-    padding: 0px;
+    padding: 0px;    
+}
+.fillers-list li {
+    min-height: 22px;
+    padding-top: 3px;
+    margin-right: 16px;
 }
 .filter-button-sorting {
     line-height: 18px; 
@@ -999,6 +1022,9 @@ a {
     vertical-align: middle;    
     background-color: transparent;
     border: none;
+  }
+.filter-button-sorting svg {
+      padding-left: 20px;
   }
 .filter-button-sorting:focus,
 .filter-button-sorting:hover {
@@ -1012,12 +1038,18 @@ a {
     fill: #323232;
 }
 .filter-option-creaminess {
+    margin-right: 15px;
+}
+.filter-option-creaminess:last-child {
+    margin-right: 0px;
+}
+.filter-option-creaminess input {
     appearance: none;
     -webkit-appearance: none;
     position: relative;
     padding-left: 25px;
 }
-.filter-option-creaminess::before {
+.filter-option-creaminess input::before {
     content: "";
     position: absolute;
     left: -6px;
@@ -1025,10 +1057,10 @@ a {
     width: 25px;
     height: 25px;
     background-image: url(../img/radio-off.svg);      
-    background-repeat: no-repeat; 
-    fill-opacity: 0.8;
+    background-repeat: no-repeat;   
+    opacity: 0.8;  
 }
-.filter-option-creaminess:checked::before  {
+.filter-option-creaminess input:checked::before  {
     content: "";
     position: absolute;
     left: -6px;
@@ -1037,7 +1069,7 @@ a {
     height: 25px;
     background-image: url(../img/radio-on.svg);      
     background-repeat: no-repeat; 
-    fill-opacity: 0.8;
+    opacity: 0.8; 
 }
 .filter-option-filler {
     appearance: none;
@@ -1054,7 +1086,7 @@ a {
     height: 25px;
     background-image: url(../img/checkbox-off.svg);      
     background-repeat: no-repeat; 
-    fill-opacity: 0.8;
+    opacity: 0.8;
 }
 .filter-option-filler:checked::before  {
     content: "";
@@ -1064,7 +1096,76 @@ a {
     width: 25px;
     height: 25px;
     background-image: url(../img/checkbox-on.svg);      
-    background-repeat: no-repeat;     
+    background-repeat: no-repeat; 
+    opacity: 0.8;     
+}
+.filter-option-creaminess input:hover::before,
+.filter-option-creaminess input:focus::before,
+.filter-option-filler:hover::before,
+.filter-option-filler:focus::before {
+    opacity: 1;
+}
+.filter-option-creaminess input:disabled::before,
+.filter-option-filler:disabled::before{
+    opacity: 0.4;
+}
+.range-slider  {
+    margin: 0px;
+    max-width: 220px;
+}
+.price-controls {
+    display: inline-block;  
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;  
+    padding-left: 16px;    
+    margin-bottom: 5px;
+    vertical-align: top;
+}
+.price-controls input {
+    width: 38px;
+    margin: 0;  
+    padding: 0px;    
+    color: inherit;
+    font: inherit;  
+    background: none;
+    border: none;
+}
+.range-slider-track {
+    position: relative; 
+    min-height: 20px;  
+    padding: 7px 22px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;       
+}
+.range-slider-track .scale {
+    position: relative;
+    width: 176px;
+    height: 4px; 
+    background: rgba(248, 247, 244, 0.5);    
+    margin-top: 7px;    
+}  
+.range-slider-track .bar {
+    position: absolute;
+    left: 25px;
+    width: 107px;
+    height: 4px;
+    background: #f8f7f4;
+}  
+.range-slider-pin {
+    position: absolute;
+    top: 5px;    
+    width: 20px;
+    height: 22px;
+    background-image: url(../img/filter-button.svg);      
+    background-repeat: no-repeat; 
+    cursor: pointer;    
+}
+.range-slider-pin-min {
+    left: 35px;
+}
+.range-slider-pin-max {
+    left: 134px;
 }
 .pagination-item a{
     line-height: 18px;
@@ -1074,14 +1175,13 @@ a {
 .container {
     max-width: 1146px;
     min-width: 320px;
-    margin-right: auto;
-    margin-left: auto; 
+    margin: 0 auto;
     padding-left: 27px;
     padding-right: 27px;
 }
 .header-wrap {
     display: flex;   
-    align-items: center; 
+    align-items: center;   
 }
 .user-navigation {
     display: flex;
@@ -1162,8 +1262,8 @@ a {
 .breadcrumbs {
     margin: 0px;
     padding: 0px; 
-    margin-top: 13px;
-    margin-bottom: 5px;
+    margin-top: 19px;
+    margin-bottom: 2px;
 }
 .breadcrumbs li::after {
     padding-left: 7px;
@@ -1173,44 +1273,65 @@ a {
 .pagination-list {
     display: flex;
     margin: 0px;  
-    margin-top: 46px;
+    margin-top: 42px;
     padding-bottom: 30px;
     justify-content: flex-end; 
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .pagination-item {
-    margin-left: 20px;
-}
-.pagination-item:first-child {  
-    position: relative;
-    display: block;
-}
-.pagination-item:first-child a {
-    color: black;
-    width: 100%;
-}
-.pagination-item:first-child::before {
-    content: "";
-    position: absolute;
-    background-color: white;
     width: 27px;
     height: 27px;
-    border-radius: 50%;
-    left: -5px;
-}
-.pagination-item:last-child {
-    padding-right: 33px;
     position: relative;
+    cursor: pointer; 
 }
-.pagination-item:last-child::after {
+.pagination-item a {    
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 27px;  
+    text-align: center;         
+}
+.paginator-item-current a {
+    color: black;
+}
+.paginator-item-current::before {
     content: "";
     position: absolute;
-    right: 0px;
-    top: 5px;
-    width: 8px;
-    height: 12px;
-    background-image: url(../img/icon-right-small.svg);      
-    background-repeat: no-repeat;    
+    background-color: transparent;         
+    width: 100%;
+    height: 100%;
+}
+.paginator-item-current {
+    background-color: white;
+    border-radius: 50%;   
+}
+.pagination-item:not(:first-child):not(:last-child):hover::before,
+.pagination-item:not(:first-child):not(:last-child):focus::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);    
+    border-radius: 50%;      
+    width: 100%;
+    height: 100%;
+}
+.pagination-item:not(:first-child):not(:last-child):active::before {
+    content: "";
+    position: absolute;
+    background-color: white;    
+    border-radius: 50%;      
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+.pagination-item:first-child svg{
+    transform: scale(-1, 1);
+    fill-opacity: 0.5;
+}
+.pagination-item svg {
+    padding: 7px 0px;
+}
+.pagination-item:last-child svg {
+    padding-left: 20px;
 }
 .feedback-form input:hover,
 .search-form input:hover,
