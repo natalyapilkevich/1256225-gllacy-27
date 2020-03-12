@@ -123,7 +123,8 @@
         </div>   
         <p class="header-contacts">С 10 до 20, ежедневно<br><span class="header-tel">8 812 450-25-25</span></p>
       </header>
-    <main class="container">
+    <main>
+    <div class="container">
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="">Каталог</a></li>
@@ -134,47 +135,22 @@
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="post"> 
           <fieldset class="filter-item">
-            <legend>Сортировка:</legend>
-            <div class="filter-background">
-            <button class="filter-button-sorting">по популярности
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
-            </button>            
-            <ul class="visually-hidden">
-              <li>
-                <label>
-                  <input class="filter-option-sorting" type="radio" name="sorting" value="по популярности" checked>                  
-                по популярности                
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input class="filter-option-sorting" type="radio" name="sorting" value="сначала недорогие">
-                сначала недорогие
-              </label>
-              </li>
-              <li>
-                <label>
-                  <input class="filter-option-sorting" type="radio" name="sorting" value="сначала дорогие">
-                сначала дорогие
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input class="filter-option-sorting" type="radio" name="sorting" value="по жирности">
-                по жирности 
-                </label>
-               </li>
-            </ul>
-          </div>
+            <legend>Сортировка:</legend>            
+              <select class="filter-button-sorting" name="sort-list">
+                <option value="by-popularity">по популярности</option>
+                <option value="cheap-first">сначала недорогие</option>
+                <option value="expensive-first">сначала дорогие</option>
+                <option value="by-fat">по жирности</option>
+              </select>                 
           </fieldset>
           <fieldset class="filter-item filter-price">
             <legend class="visually-hidden">Цена:</legend>
             <div class="range-slider">
               <div class="price-controls">
                 <span class="price-title">Цена:</span>
-                <input type="number" name="min" value="100">
+                <input type="text" name="min" value="100">
                 <span class="price-ruble"> руб. – </span>
-                <input type="number" name="max" value="500">
+                <input type="text" name="max" value="500">
                 <span class="price-ruble"> руб.</span>
               </div>
               <div class="range-slider-track">
@@ -233,7 +209,8 @@
         <button class="filter-button" type="submit">Применить</button>
       </form>
       </section>
-      <section class="catalog">
+    </div>
+      <section class="catalog container-product">
         <h2 class="visually-hidden">Список сливочного мороженого</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -358,6 +335,7 @@
           </li>        
         </ul>
       </section>
+    <div class="container">
       <ul class="pagination-list">   
         <li class="pagination-item">
           <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
@@ -371,10 +349,11 @@
         <li class="pagination-item"><a href="">5</a></li>
         <li class="pagination-item">
           <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
-            <path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 
+            <path fill="#ffffff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 
             .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
         </li>
       </ul>   
+    </div>
     </main>
     <footer class="main-footer container">    
       <ul class="footer-social">
