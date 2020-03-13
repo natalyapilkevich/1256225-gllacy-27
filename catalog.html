@@ -15,7 +15,7 @@
       </a>
       <nav class="main-navigation">        
         <ul class="main-navigation-list">
-          <li class="site-navigation-current"><a href="">Каталог</a>            
+          <li class="submenu site-navigation-current"><a href="">Каталог</a>            
             <ul class="main-navigation-dropdown-list">
               <li><a href="">Новинки</a></li>
               <li class="current-page"><a>Сливочное</a></li>
@@ -30,6 +30,7 @@
       </nav>      
       <div class="user-navigation">                
         <section class="search">  
+          <h2 class="visually-hidden">Поиск</h2>
           <button class="search-button" type="button">
             <span class="visually-hidden">Поиск</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
@@ -44,7 +45,8 @@
           </form> 
         </div>
         </section>   
-        <section class="login">        
+        <section class="login">  
+          <h2 class="visually-hidden">Логин</h2>      
           <a class="login-button" href="">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
               <g><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g>
@@ -70,10 +72,10 @@
               </li>  
            </ul>
           </form>
-          <!--<button class="modal-close" type="button">Закрыть</button>-->
         </div>
         </section>    
         <section class="basket-full">
+          <h2 class="visually-hidden">Корзина</h2>
           <button class="basket-button-full" type="button">
             <svg class="basket-button-full-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
               <path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/>
@@ -216,7 +218,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-1.jpg" width="267" height="267" alt="Мороженое теплого желтого цвета">
-              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3> 
+              <h3><span class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3> 
             </a>
             <p class="catalog-item-price">310&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
@@ -226,7 +228,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-2.jpg" width="267" height="267" alt="Мороженое светло-коричневого цвета">
-              <h3>Сливочно-кофейное с кусочками шоколада</h3>     
+              <h3><span class="product-name">Сливочно-кофейное с кусочками шоколада</span></h3>     
             </a>
             <p class="catalog-item-price">380&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
@@ -236,7 +238,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-3.jpg" width="267" height="267" alt="Мороженое розового цвета с посыпкой в виде белых сердечек">
-              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>         
+              <h3><span class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</span></h3>         
             </a>
             <p class="catalog-item-price">355&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
@@ -246,7 +248,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-4.jpg" width="267" height="267" alt="Мороженое бело-коричневого цвета">
-              <h3>Сливочное крем-брюле с карамельной подливкой</h3>       
+              <h3><span class="product-name">Сливочное крем-брюле с карамельной подливкой</span></h3>       
             </a>
             <p class="catalog-item-price">415&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
@@ -256,7 +258,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-5.jpg" width="267" height="267" alt="Мороженое розово-белого цвета">
-              <h3>Сливочное с брусничным джемом</h3>            
+              <h3><span class="product-name">Сливочное с брусничным джемом</span></h3>            
             </a>
             <p class="catalog-item-price">325&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
@@ -266,7 +268,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-6.jpg" width="267" height="267" alt="Мороженое светло-черничного цвета с тремя ягодами черники">
-              <h3>Сливочно-черничное с цельными ягодами черники</h3>           
+              <h3><span class="product-name">Сливочно-черничное с цельными ягодами черники</span></h3>           
             </a>
             <p class="catalog-item-price">410&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
@@ -276,7 +278,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-7.jpg" width="267" height="267" alt="Мороженое ярко-желтого цвета с разноцветной присыпкой">
-              <h3>Сливочно-лимонное с карамельной присыпкой</h3>           
+              <h3><span class="product-name">Сливочно-лимонное с карамельной присыпкой</span></h3>           
             </a>
             <p class="catalog-item-price">375&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
@@ -286,7 +288,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-8.jpg" width="267" height="267" alt="Мороженое белого цвета с присыпкой шоколадной стружкой">
-              <h3>Сливочное с шоколадной стружкой</h3>          
+              <h3><span class="product-name">Сливочное с шоколадной стружкой</span></h3>          
             </a>
             <p class="catalog-item-price">320&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
@@ -296,7 +298,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-9.jpg" width="267" height="267" alt="Мороженое теплого светло-желтого цвета с кусочками шоколада">
-              <h3>Сливочно-ванильное с кусочками шоколада</h3>         
+              <h3><span class="product-name">Сливочно-ванильное с кусочками шоколада</span></h3>         
             </a>
             <p class="catalog-item-price">440&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
@@ -306,7 +308,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-10.jpg" width="267" height="267" alt="Мороженое ярко-бирюзового цвета">
-              <h3>Сливочноe с ментоловым сиропом</h3>            
+              <h3><span class="product-name">Сливочноe с ментоловым сиропом</span></h3>            
             </a>
             <p class="catalog-item-price">435&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
@@ -316,7 +318,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-11.jpg" width="267" height="267" alt="Мороженое белого цвета с крупными кусочками шоколада">
-              <h3>Сливочное с кусочками черного шоколада</h3>        
+              <h3><span class="product-name">Сливочное с кусочками черного шоколада</span></h3>        
             </a>
             <p class="catalog-item-price">355&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
@@ -326,7 +328,7 @@
           <li class="catalog-item">
             <a href="">
               <img src="img/product-12.jpg" width="267" height="267" alt="Мороженое светло-зеленого цвета">
-              <h3>Сливочное с мятным сиропом</h3>         
+              <h3><span class="product-name">Сливочное с мятным сиропом</span></h3>         
             </a>
             <p class="catalog-item-price">420&#8381;<span class="catalog-item-unit">/кг</span></p>
             <div class="wrap-item-button">
