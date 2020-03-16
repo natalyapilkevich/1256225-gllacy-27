@@ -123,7 +123,7 @@
         </section>  
         </div> 
         </div>   
-        <p class="header-contacts">С 10 до 20, ежедневно<br><span class="header-tel">8 812 450-25-25</span></p>
+        <p class="header-contacts">С 10 до 20, ежедневно<br><a class="header-tel" href="tel:88124502525">8 812 450-25-25</a></p>
       </header>
     <main>
     <div class="container">
@@ -166,19 +166,15 @@
           </fieldset>
           <fieldset class="filter-item">
             <legend>Жирность:</legend>
-            <div class="filter-background">
-            <label class="filter-option-creaminess">
-              <input type="radio" name="creaminess" value="0%">0%
-            </label>
-            <label class="filter-option-creaminess">
-              <input type="radio" name="creaminess" value="до 10%" checked>до 10%
-            </label>
-            <label class="filter-option-creaminess">
-              <input type="radio" name="creaminess" value="до 30%">до 30%
-            </label>
-            <label class="filter-option-creaminess">
-              <input type="radio" name="creaminess" value="до 30%">выше 30%
-            </label>  
+            <div class="filter-background">            
+              <input class="visually-hidden filter-input-radio" type="radio" name="creaminess" id="creaminess-0" value="0%">
+              <label class="filter-option-creaminess" for="creaminess-0">0%</label>  
+              <input class="visually-hidden filter-input-radio" type="radio" name="creaminess" id="creaminess-before-10" value="до 10%" checked>
+              <label class="filter-option-creaminess" for="creaminess-before-10">до 10%</label>
+              <input class="visually-hidden filter-input-radio" type="radio" name="creaminess" id="creaminess-before-30" value="до 30%">
+              <label class="filter-option-creaminess" for="creaminess-before-30">до 30%</label>
+              <input class="visually-hidden filter-input-radio" type="radio" name="creaminess" id="creaminess-after-30" value="выше 30%">
+              <label class="filter-option-creaminess" for="creaminess-after-30">выше 30%</label>            
           </div>
           </fieldset>           
           <fieldset class="filter-item">
@@ -186,23 +182,23 @@
             <div class="filter-background">
               <ul class="fillers-list">
                 <li>
-                  <input class="filter-option-filler" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                  <input class="visually-hidden filter-option-filler" type="checkbox" name="chocolate" id="filter-chocolate" checked>
                   <label for="filter-chocolate">шоколадные</label>
                 </li>
                 <li>
-                 <input class="filter-option-filler" type="checkbox" name="sugar-powders" id="filter-sugar-powders" checked>
+                 <input class="visually-hidden filter-option-filler" type="checkbox" name="sugar-powders" id="filter-sugar-powders" checked>
                   <label for="filter-sugar-powders">сахарные присыпки</label>
                 </li>
                 <li>
-                  <input class="filter-option-filler" type="checkbox" name="fruits" id="filter-fruits">
+                  <input class="visually-hidden filter-option-filler" type="checkbox" name="fruits" id="filter-fruits">
                   <label for="filter-fruits">фрукты</label>
                 </li>
                <li>
-                 <input class="filter-option-filler" type="checkbox" name="syrups" id="filter-syrups">
+                 <input class="visually-hidden filter-option-filler" type="checkbox" name="syrups" id="filter-syrups">
                  <label for="filter-syrups">сиропы</label>
                 </li>
                <li>
-                 <input class="filter-option-filler" type="checkbox" name="jams" id="filter-jams">
+                 <input class="visually-hidden filter-option-filler" type="checkbox" name="jams" id="filter-jams">
                  <label for="filter-jams">джемы</label>
                </li>
              </ul>
