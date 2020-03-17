@@ -22,9 +22,7 @@ a {
     margin: -1px;
 }
 .modal   {
-    z-index: 1;
-
-    display: none;    
+    display: none;  
 }
 .button {
     font-size: 18px;
@@ -176,6 +174,16 @@ a {
 .main-navigation-dropdown-list a:active {
     background-color: #f6b5a5;
 }
+.menu-item-new a:before {
+    content: "";
+    position: absolute;
+    left: 13px;
+    right: 13px;
+    bottom: 0px;
+    height: 1px;
+
+    background-color: #d1d0ce;  
+}
 .current-page a {
     background-color: #d07058;
 }
@@ -243,7 +251,8 @@ a {
     position: relative;
 }
 .search-modal {
-    position: absolute;     
+    position: absolute;  
+    z-index: 2;     
     right: 0px;
     
     padding-top: 5px;
@@ -267,7 +276,8 @@ a {
     border: solid 1px #d3d3d2;    
 }
 .login-modal {
-    position: absolute;     
+    position: absolute;  
+    z-index: 2;     
     right: 0px;
 
     padding-top: 5px;
@@ -347,6 +357,7 @@ a {
 }
 .basket-modal {
     position: absolute; 
+    z-index: 2;  
     right: 0px;
 
     width: 540px;    
@@ -420,6 +431,7 @@ a {
 }
 .header-contacts {
     position: absolute;
+    z-index: 1;
     right: 27px;
     top: 73px;
     margin: 0;
@@ -734,6 +746,7 @@ a {
 .contacts iframe {
     position: absolute;
     z-index: 2;
+    width: 100%;
 
     border: none;
 }
@@ -782,12 +795,15 @@ a {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700; 
+    color: black;
+
+    text-decoration: none;
 }
 .modal-background {    
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 4; 
+    z-index: 5; 
     
     display: none;
     width: 100%;
@@ -801,7 +817,7 @@ a {
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 3;    
+    z-index: 4;    
 
     display: none;           
     box-sizing: border-box;
@@ -860,24 +876,21 @@ a {
     border-radius: 5px;
     box-shadow: none;    
 }
-.feedback button {
+.feedback-button {
     padding: 10px 20px;
     margin-left: auto;
     margin-right: 0;
 }
 .modal-close {
     position: absolute;
-    top:  5px;
-    right: 12px;
-
-    width: 18px;
-    height: 17px;
+    top:  15px;
+    right: 23px;   
 
     border: 0;
 }
 .feedback-open {
     display: block;
-    z-index: 5;
+    z-index: 6;
 
     animation: bounce 0.6s;
 }
@@ -1343,7 +1356,7 @@ a {
     font-weight: 500;  
     color: #ffffff;
 }
-.header-wrap {
+.header-wrap {    
     display: -ms-flexbox;
     display: flex;   
     align-items: center;   

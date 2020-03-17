@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>  
     <div class="modal-background"></div>
@@ -23,7 +23,7 @@
         <p>
           <textarea name="comment" rows="5" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="feedback-button" type="submit">Отправить</button>
         <button class="modal-close" type="button">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
             <path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/>
@@ -46,7 +46,7 @@
           <li class="main-navigation-item submenu">
             <a href="">Каталог</a>            
             <ul class="main-navigation-dropdown-list">
-              <li>
+              <li class="menu-item-new">
                 <a href="">Новинки</a>
               </li>
               <li>
@@ -262,7 +262,7 @@
       </div>
       <section class="contacts">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5948798555619!2d30.32243585507423!3d59.93886427625802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1584449280880!5m2!1sru!2sru" 
-        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        
+        width="1200" height="430" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        
         <div class="container">
           <div class="contacts-inner">
         <h2 class="visually-hidden">Карта</h2>
@@ -273,7 +273,7 @@
           </p>
           <p class="contacts-base">
             Для заказов по телефону:<br>
-            <span class="contacts-tel">8 812 450-25-25</span><br>
+            <a class="contacts-tel" href="tel:88124502525">8 812 450-25-25</a><br>            
             (с 10 до 20 ежедневно)
           </p>   
           <a class="button contacts-button" href="">Форма обратной связи</a>    
@@ -357,66 +357,7 @@
     </div>
     </footer> 
   </div>
-  <script>
-    var link = document.querySelector(".contacts-button");
-    var popup = document.querySelector(".feedback");
-    var close = popup.querySelector(".modal-close");
-    var form = popup.querySelector("form");
-    var login = popup.querySelector("[name=user-name]");
-    var email = popup.querySelector("[name=user-email]");
-    var background = document.querySelector(".modal-background");
-
-    var isStorageSupport = true;
-    var storage = "";
-  
-    try {
-      storage = localStorage.getItem("login");
-    } catch (err) {
-      isStorageSupport = false;
-    }    
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();    
-      popup.classList.add("feedback-open");
-      background.classList.add("background-open");
-      if (storage) {
-      login.value = storage;
-      email.focus();
-      } else {
-      login.focus();
-      }
-    });
-
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("feedback-open");
-      popup.classList.remove("feedback-error");
-      background.classList.remove("background-open");
-    });
-    form.addEventListener("submit", function (evt) {
-      if (!login.value || !email.value) {
-        evt.preventDefault();
-        popup.classList.remove("feedback-error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("feedback-error");
-      } else {
-      if (isStorageSupport) {
-        localStorage.setItem("login", login.value);
-      }
-      }
-    });
-    window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("feedback-open")) {
-        popup.classList.remove("feedback-open");
-        popup.classList.remove("feedback-error");
-        background.classList.remove("background-open");
-
-      }
-      }
-    });
-
+  <script src="js/script-min.js">
   </script>
 
 </body></html>
